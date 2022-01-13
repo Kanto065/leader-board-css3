@@ -1,0 +1,232 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@500&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    width: 807px;
+    margin-top: 30px;
+}
+
+
+/* navigation */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #562EFF;
+    margin-bottom: 20px;
+}
+.nav{
+    width: 870px;
+    display: flex;
+    color: white;
+    /* align-items: center; */
+    justify-content: space-between;
+
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 40.42px;
+    height: 51px;   
+}
+.logo-title{
+    margin: 0 15px;
+}
+/* .menu{
+    align-items: center;
+} */
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin-left: 36px;
+    margin-bottom: 30px;
+}
+.menu img{
+    height: 51px;
+    width: 51px;
+    margin-left: 36px;
+}
+
+
+/* top players style */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+.section-title{
+    margin: 30px 30px;
+    color: #562EFF;
+    font-weight: 500;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player h3{
+    font-weight: 500;
+    font-size: 18px;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+
+/* top Blog section */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    margin-right: 35px;
+}
+.blog{
+    display: flex;
+    margin-left: 30px;
+    
+}
+.blog-info .blog-title{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.blog-author{
+    color: #9F9F9F;
+    margin: 0;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+
+    margin-right: 15px;
+}
+
+
+/* Latest course section */
+.courses{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 30px;
+}
+.course{
+    margin-right: 30px;
+    padding: 12px;
+    padding-bottom: 20px;
+    box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-title{
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.course-author{
+    color: #ED6B4F;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.course-info{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-info span{
+    color:#A2A2A2;
+}
+.course-duration{
+    background-color: #FFE4E8;
+    padding: 5px;
+    border-radius: 15px;
+    color:#FF4A60;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+
+
+/* footer */
+footer{
+    background-color: #562EFF;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/* ---------------------
+    Media Queries 
+-----------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px){
+    header{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    hr{
+        width: 100%;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        margin-right: 35px;
+    }
+    .courses{
+        font-family: 'Roboto', sans-serif;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 30px;
+    }
+    .course .course-banner img{
+        width: 100%;
+        height: 100%;
+    }
+}
