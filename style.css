@@ -39,30 +39,31 @@ header{
     width: 870px;
     display: flex;
     color: white;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-between;
 
 }
 .logo{
     display: flex;
+    align-items: center;
 }
-.logo img{
+.logo .logo-pic img{
     width: 40.42px;
     height: 51px;   
 }
-.logo-title{
-    margin: 0 15px;
+.logo-title h2{
+    margin: 0px 15px;
 }
-/* .menu{
+.menu-profile{
+    display: flex;
     align-items: center;
-} */
+}
 .menu a{
     text-decoration: none;
     color: white;
     margin-left: 36px;
-    margin-bottom: 30px;
 }
-.menu img{
+.menu .prfile-pic{
     height: 51px;
     width: 51px;
     margin-left: 36px;
